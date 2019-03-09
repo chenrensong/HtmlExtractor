@@ -312,10 +312,10 @@ namespace HtmlExtractor.Extractor
                 xpath = doc_body.GetXPath(aaaNode);
                 domNode.XPath = xpath;
             }
-            if (!string.IsNullOrEmpty(xpath))
-            {
-                var test = doc_src.DocumentNode.SelectSingleNode(xpath);
-            }
+            //if (!string.IsNullOrEmpty(xpath))
+            //{
+            //    var test = doc_src.DocumentNode.SelectSingleNode(xpath);
+            //}
             return domNode;
         }
 
