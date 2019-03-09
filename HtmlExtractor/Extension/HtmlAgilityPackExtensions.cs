@@ -1,14 +1,11 @@
 ﻿using HtmlAgilityPack;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Linq;
 
 namespace HtmlExtractor
 {
     public static class HtmlAgilityPackExtensions
     {
-
         public static void FindHtmlNode(this HtmlNode htmlNode, HtmlNode targetNode, ref HtmlNode resultNode)
         {
             if (htmlNode == null || targetNode == null)
@@ -83,8 +80,6 @@ namespace HtmlExtractor
             }
             return GetAttributeValue(node, attributeName);
         }
-
-
 
 
         public static HtmlNode FindNodeByType(this HtmlDocument htmlDocument, string type)

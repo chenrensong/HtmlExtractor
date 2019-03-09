@@ -24,6 +24,11 @@ namespace HtmlExtractor
         /// </summary>
         public DomNode<DateTime> PublishTime { get; internal set; }
 
+        /// <summary>
+        /// 作者
+        /// </summary>
+        public DomNode<string> Author { get; internal set; }
+
     }
 
 

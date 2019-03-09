@@ -1,18 +1,29 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <Version>1.0.0</Version>
+    <Authors>chenrensong</Authors>
+    <PackageProjectUrl>https://github.com/chenrensong/HtmlExtractor</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <AssemblyName>HtmlExtractor</AssemblyName>
+    <PackageId>HtmlExtractor</PackageId>
+    <PackageTags>HtmlExtractor</PackageTags>
+    <RepositoryUrl>git://github.com/chenrensong/HtmlExtractor</RepositoryUrl>
+    <Description> 支持通用网页以及百度智能小程序HTML信息提取，能够自动提取 Title、Content、PublishTime 等字段</Description>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Chromium\**" />
-    <EmbeddedResource Remove="Chromium\**" />
-    <None Remove="Chromium\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="HtmlAgilityPack" Version="1.9.1" />
-    <PackageReference Include="PuppeteerSharp" Version="1.12.0" />
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,5 @@
-﻿using HtmlExtractor;
+﻿using Demo.Chromium;
+using HtmlExtractor;
 using System;
 using System.Diagnostics;
 
@@ -24,7 +25,6 @@ namespace Demo
 
             url = "https://l6unbo.smartapps.cn/pages/article/article?article_id=1852";
 
-
             //url = "http://jt9wgp.smartapps.cn/pages/detail/detail?id=1592433437&categoryId=23851&comefrom=home";
 
 
@@ -47,7 +47,7 @@ namespace Demo
 
             sw.Start();
 
-            var result = Html.ExtractAsync(url).Result;
+            var result = Helper.DownloadAndExtractAsync(url).Result;
 
             sw.Stop();
 
